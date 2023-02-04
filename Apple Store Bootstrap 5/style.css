@@ -1,0 +1,92 @@
+body p,h1,h2,h3,h4,h5,h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+body p,a,li,button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+    height: 686px;
+}
+
+.slider .caption {
+    top: 30%;
+    left: 30%;
+}
+
+.slider .caption p{
+    font-size: 30px;
+}
+
+.description img {
+    width: 100%;
+}
+
+.description .blog-text {
+    padding: 30px 15px;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    content: "";
+}
+
+.container .card .card-body a{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    background: black;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.container .card .card-body a:hover{
+    background: #fff;
+    color: black;
+    border-color: black;
+}
+
+.btn {
+    background: black;
+    border-color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #fff;
+    border-color: black;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .w-25 {
+        width: 80% !important;
+    }
+
+    .slider .caption{
+        top: 10% !important;
+        left: 40px !important;
+        padding: 0 40px;
+    }
+
+    .card {
+        margin-top: 10px
+    }
+
+    .container .card .card-body a{
+        font-size: 15px;
+    }
+}
